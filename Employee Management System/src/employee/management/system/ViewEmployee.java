@@ -79,7 +79,7 @@ public class ViewEmployee extends JFrame implements ActionListener{
     }
     
     public void actionPerformed(ActionEvent ae){
-        if(ae.getSource() == search){cemployeeId
+        if(ae.getSource() == search){
             String query = "select * from employee where empId = '"+cemployeeId.getSelectedItem()+"'";
             try{
                 Conn c = new Conn();
